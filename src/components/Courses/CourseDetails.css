@@ -1,0 +1,219 @@
+button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #f1f1f1;
+}
+
+.course-details-container .main-content {
+  display: block; /* Stack items vertically */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Course Title Input Styles */
+.course-title-centered, .course-title-input {
+  font-size: 1.2rem; /* Match title font size */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* Course Description Styles */
+.course-description, .course-description-input {
+  font-size: 1.2rem; /* Match description font size */
+  font-weight: normal;
+  font-style: italic; /* Match description font style */
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* Prevent Resizing for Textareas */
+textarea {
+  resize: none;
+}
+
+/* Specific Styles for Focused Inputs */
+input:focus,
+textarea:focus {
+  box-shadow: none;
+}
+
+/* Prevent Resizing for Textareas */
+textarea {
+  resize: none;
+}
+
+
+/* Containers */
+.course-details-container {
+  margin: 2rem auto 0;
+  padding: 1rem;
+  width: 80%;
+  background: #fff;
+  border-radius: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  gap: 0.8rem; /* Add spacing between stacked children */
+}
+
+.course-details-container:focus {
+  outline: none;
+}
+
+.course-divider {
+  width: 25%;
+  border-top: 2px solid #d0acac;
+}
+
+/* Headers and Descriptions */
+.course-header,
+.course-title-centered {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+/* Learning Units */
+.learning-units {
+  margin-top: 30px;
+  width: 100%;
+}
+.learning-unit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.unit-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.unit-info i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Shared styles for unit-info text and learning-unit input */
+.unit-info p,
+.learning-unit input {
+  font-size: 16px; /* Match the font size */
+  font-family: 'Raleway', sans-serif; /* Match font family */
+  font-weight: normal; /* Match font weight */
+  color: #333; /* Match text color */
+  background-color: transparent; /* No background for input */
+  border: none; /* No border for input */
+  outline: none; /* Remove focus outline */
+  margin: 0; /* No extra margin */
+  padding: 0; /* No extra padding */
+  width: 100%; /* Expand to fill parent container */
+  display: inline-block; /* Ensure inline layout */
+  text-align: left; /* Align text to the left */
+}
+
+/* Prevent resizing for input (optional) */
+.learning-unit input {
+  resize: none;
+}
+
+/* Maintain appearance when focused */
+.learning-unit input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none; /* Remove focus shadow */
+}
+
+
+/* Dropdown */
+.unit-actions {
+  position: relative;
+}
+.options-dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  padding: 10px;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+.options-dropdown.show {
+  display: block;
+}
+.options-dropdown button {
+  width: 100%;
+  padding: 8px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.options-dropdown button:hover {
+  background: #f0f0f0;
+}
+.more-options-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+/*  visibility: hidden;*/
+}
+
+/* Buttons */
+.edit-content-btn {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background: transparent;
+  color: #000;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.edit-content-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-details-container {
+    width: 95%;
+  }
+  .course-header {
+    font-size: 1.5rem;
+  }
+  .course-description {
+    font-size: 1rem;
+  }
+}

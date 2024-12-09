@@ -1,0 +1,38 @@
+.template-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.color-options label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.color-options input[type="color"] {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.wysiwyg-container {
+  flex: 3;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.ai-suggestions-btn, .save-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ai-suggestions-btn:hover, .save-btn:hover {
+  background-color: #0056b3;
+}

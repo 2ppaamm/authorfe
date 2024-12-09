@@ -1,0 +1,73 @@
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.course-title {
+  font-size: 18px;
+  margin: 0;
+  color: black;
+}
+
+.middle-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.template-btn, .settings-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.template-btn i, .settings-btn i {
+  font-size: 20px;
+}
+
+.right-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.right-nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+}
+
+.right-nav button.active-tab {
+  color: #007bff;
+}
+
+.right-nav button i {
+  font-size: 20px;
+}
+
+/* Flip the icon for mobile landscape */
+.flipped {
+  transform: rotate(90deg);
+  display: inline-block;
+}

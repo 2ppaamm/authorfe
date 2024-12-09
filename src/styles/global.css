@@ -1,0 +1,241 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Typography */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #333; /* Default text color */
+  padding: 0;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #222; /* Darker heading color */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-nav .nav-links a {
+  margin-left: 0.8rem;
+  text-decoration: none;
+}
+
+.top-nav .nav-links a:hover {
+  text-decoration: underline;
+}
+
+.top-nav .profile {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .profile .profile-pic {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.top-nav .dropdown {
+  position: relative;
+}
+
+.top-nav .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.top-nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.top-nav .search-sort {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.sort-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.course-title {
+  font-size: 0.8rem;
+  margin: 0;
+  color: black;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.middle-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: black;
+}
+
+.template-btn, .settings-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.template-btn i, .settings-btn i {
+  font-size: 20px;
+}
+
+.right-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.right-nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.right-nav button.active-tab {
+  color: #007bff;
+}
+
+.right-nav button i {
+  font-size: 20px;
+}
+
+/* Flip the icon for mobile landscape */
+.flipped {
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+/* Main container with left sidebar and content */
+.main-content {
+  display: flex;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 250px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+}
+
+.create-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.sidebar-links a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-links a:hover {
+  background-color: #ccc;
+}

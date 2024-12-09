@@ -1,0 +1,40 @@
+/* Tabs Styling */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.tabs button.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Other Styling */
+.save-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
